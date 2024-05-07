@@ -10,4 +10,8 @@ json.array! @routines do |routine|
     json.end_image_url routine.exercise.end_image_url
     
   end
+
+  json.category do
+    json.name routine.exercise.category.name
+    end
 end
